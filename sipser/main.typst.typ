@@ -1,4 +1,11 @@
-#outline()
+#let title = {
+  set text(font: "Copperplate Gothic", weight: "bold", tracking: 2pt)
+  let text = overline(stroke: (thickness: 1pt, dash: ("dot", "dot")), offset: -0.8em, [CONTENTS])
+  stack(dir: ttb, text, v(8em))
+}
+
+
+#align(center, outline(title: title))
 
 = Preface to the First Edition
 === To the student
