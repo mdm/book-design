@@ -1,18 +1,210 @@
-\input{style.scrbook}
+\input{style.book}
 
 \usepackage{graphicx}
 \usepackage{lipsum}
 
-\AddToHook{shipout/background}{%
-    \put (0in,-\paperheight){%
-        \includegraphics[width=\paperwidth,height=\paperheight,page=7]{%
-            reference/Introduction To The Theory Of Computation, Michael Sipser, 3Ed, Cengage, 2013.pdf%
-        }%
-    }%
-}
+% \AddToHook{shipout/background}{%
+%     \put (0in,-\paperheight){%
+%         \includegraphics[width=\paperwidth,height=\paperheight,page=7]{%
+%             reference.pdf%
+%         }%
+%     }%
+% }
+
+\setcounter{chapter}{-1}
 
 \begin{document}
 
-Hello world!
+\tableofcontents
+
+\chapter{Preface to the First Edition}
+\subsection{To the student}
+\subsection{To the educator}
+\subsection{The first edition}
+\subsection{Feedback to the author}
+\subsection{Acknowledgments}
+
+\chapter{Preface to the Second Edition}
+\chapter{Preface to the Third Edition}
+
+\chapter{Introduction}
+\section{Automata, Computability, and Complexity}
+\subsection{Complexity theory}
+\subsection{Computability theory}
+\subsection{Automata theory}
+\section{Mathematical Notions and Terminology}
+\subsection{Sets}
+\subsection{Sequences and tuples}
+\subsection{Functions and relations}
+\subsection{Graphs}
+\subsection{Strings and languages}
+\subsection{Boolean logic}
+\subsection{Summary of mathematical terms}
+\section{Definitions, Theorems, and Proofs}
+\subsection{Finding proofs}
+\section{Types of Proof}
+\subsection{Proof by construction}
+\subsection{Proof by contradiction}
+\subsection{Proof by induction}
+\subsection{Exercises, Problems, and Solutions}
+
+
+\part{Automata and Languages}
+\chapter{Regular Languages}
+\section{Finite Automata}
+\subsection{Formal definition of a finite automaton}
+\subsection{Examples of finite automata}
+\subsection{Formal definition of computation}
+\subsection{Designing finite automata}
+\subsection{The regular operations}
+\section{Nondeterminism}
+\subsection{Formal definition of a nondeterministic finite automaton}
+\subsection{Equivalence of NFAs and DFAs}
+\subsection{Closure under the regular operations}
+\section{Regular Expressions}
+\subsection{Formal definition of a regular expression}
+\subsection{Equivalence with finite automata}
+\section{Nonregular Languages}
+\subsection{The pumping lemma for regular languages}
+\subsection{Exercises, Problems, and Solutions}
+
+\chapter{Context-Free Languages}
+\section{Context-Free Grammars}
+\subsection{Formal definition of a context-free grammar}
+\subsection{Examples of context-free grammars}
+\subsection{Designing context-free grammars}
+\subsection{Ambiguity}
+\subsection{Chomsky normal form}
+\section{Pushdown Automata}
+\subsection{Formal definition of a pushdown automaton}
+\subsection{Examples of pushdown automata}
+\subsection{Equivalence with context-free grammars}
+\section{Non-Context-Free Languages}
+\subsection{The pumping lemma for context-free languages}
+\section{Deterministic Context-Free Languages}
+\subsection{Properties of DCFLs}
+\subsection{Deterministic context-free grammars}
+\subsection{Relationship of DPDAs and DCFGs}
+\subsection{Parsing and LR(k) Grammars}
+\subsection{Exercises, Problems, and Solutions}
+
+\part{Computability Theory}
+\chapter{The Church–Turing Thesis}
+\section{Turing Machines}
+\subsection{Formal definition of a Turing machine}
+\subsection{Examples of Turing machines}
+\section{Variants of Turing Machines}
+\subsection{Multitape Turing machines}
+\subsection{Nondeterministic Turing machines}
+\subsection{Enumerators}
+\subsection{Equivalence with other models}
+\section{The Definition of Algorithm}
+\subsection{Hilbert’s problems}
+\subsection{Terminology for describing Turing machines}
+\subsection{Exercises, Problems, and Solutions}
+
+\chapter{Decidability}
+\section{Decidable Languages}
+\subsection{Decidable problems concerning regular languages}
+\subsection{Decidable problems concerning context-free languages}
+\section{Undecidability}
+\subsection{The diagonalization method}
+\subsection{An undecidable language}
+\subsection{A Turing-unrecognizable language}
+\subsection{Exercises, Problems, and Solutions}
+
+\chapter{Reducibility}
+\section{Undecidable Problems from Language Theory}
+\subsection{Reductions via computation histories}
+\section{A Simple Undecidable Problem}
+\section{Mapping Reducibility}
+\subsection{Computable functions}
+\subsection{Formal definition of mapping reducibility}
+\subsection{Exercises, Problems, and Solutions}
+
+\chapter{Advanced Topics in Computability Theory}
+\section{The Recursion Theorem}
+\subsection{Self-reference}
+\subsection{Terminology for the recursion theorem}
+\subsection{Applications}
+\section{Decidability of logical theories}
+\subsection{A decidable theory}
+\subsection{An undecidable theory}
+\section{Turing Reducibility}
+\section{A Definition of Information}
+\subsection{Minimal length descriptions}
+\subsection{Optimality of the definition}
+\subsection{Incompressible strings and randomness}
+\subsection{Exercises, Problems, and Solutions}
+
+\part{Complexity Theory}
+\chapter{Time Complexity}
+\section{Measuring Complexity}
+\subsection{Big-O and small-o notation}
+\subsection{Analyzing algorithms}
+\subsection{Complexity relationships among models}
+\section{The Class P}
+\subsection{Polynomial time}
+\subsection{Examples of problems in P}
+\section{The Class NP}
+\subsection{Examples of problems in NP}
+\subsection{The P versus NP question}
+\section{NP-completeness}
+\subsection{Polynomial time reducibility}
+\subsection{Definition of NP-completeness}
+\subsection{The Cook–Levin Theorem}
+\section{Additional NP-complete Problems}
+\subsection{The vertex cover problem}
+\subsection{The Hamiltonian path problem}
+\subsection{The subset sum problem}
+\subsection{Exercises, Problems, and Solutions}
+
+\chapter{Space Complexity}
+\section{Savitch’s Theorem}
+\section{The Class PSPACE}
+\section{PSPACE-completeness}
+\subsection{The TQBF problem}
+\subsection{Winning strategies for games}
+\subsection{Generalized geography}
+\section{The Classes L and NL}
+\section{NL-completeness}
+\subsection{Searching in graphs}
+\section{NL equals coNL}
+\subsection{Exercises, Problems, and Solutions}
+
+\chapter{Intractability}
+\section{Hierarchy Theorems}
+\subsection{Exponential space completeness}
+\section{Relativization}
+\subsection{Limits of the diagonalization method}
+\section{Circuit Complexity}
+\subsection{Exercises, Problems, and Solutions}
+
+\chapter{Advanced Topics in Complexity Theory}
+\section{Approximation Algorithms}
+\section{Probabilistic Algorithms}
+\subsection{The class BPP}
+\subsection{Primality}
+\subsection{Read-once branching programs}
+\section{Alternation}
+\subsection{Alternating time and space}
+\subsection{The Polynomial time hierarchy}
+\section{Interactive Proof Systems}
+\subsection{Graph nonisomorphism}
+\subsection{Definition of the model}
+\subsection{IP = PSPACE}
+\section{Parallel Computation}
+\subsection{Uniform Boolean circuits}
+\subsection{The class NC}
+\subsection{P-completeness}
+\section{Cryptography}
+\subsection{Secret keys}
+\subsection{Public-key cryptosystems}
+\subsection{One-way functions}
+\subsection{Trapdoor functions}
+\subsection{Exercises, Problems, and Solutions}
+
+\chapter{Selected Bibliography}
+\chapter{Index}
 
 \end{document}
