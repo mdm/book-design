@@ -1,7 +1,0 @@
-reference
-*.dvi
-*.pdf
-*.log
-*.aux
-*.fls
-*.fdb_latexmk
